@@ -1,0 +1,59 @@
+<!doctype html>
+<!--Simon Agamirov-->
+<html>	
+<head>	
+<meta charset="utf-8">
+<title> Assignment 1 </title>
+	
+<script>
+		
+	var initialCost = 200;
+		
+	var discountPercentage = .10;
+		
+	var taxRate = .0725;
+		
+	var shippingCost = 5.50;
+		
+		var discountAmmount = initialCost * discountPercentage;
+		
+		//alert(discountAmmount);
+		
+		var totalDiscount = initialCost - discountAmmount;
+		
+		//alert(totalDiscount);
+		
+		var taxAmmount = totalDiscount * taxRate;
+		
+		//alert(taxAmmount);
+		
+		var totalWithTax = totalDiscount + taxAmmount;
+		
+		//alert(totalWithTax);
+		
+		var totalCost = totalWithTax + shippingCost;
+		
+		alert(totalCost);
+		
+		var totalCost = num.toFixed(2);
+		
+</script>
+	
+</head>
+
+<body>
+	
+	<h2>Details of Your Purchase</h2>
+	
+	<script> </script>
+	
+		Your initial cost per item is $<script>document.write(initialCost)</script><br>
+	
+		Your cost with discount is $<script>document.write(totalDiscount)</script><br>
+	
+		Your cost with tax is $<script>document.write(totalWithTax)</script><br>
+	
+		Your final purchase cost is $<script>document.write(totalCost)</script> 
+	
+</body>
+</html>
